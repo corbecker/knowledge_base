@@ -1,0 +1,81 @@
+body {
+  background-color: #f6f7fd;
+  /* All levels of nav */
+  /* Nav: second level (shown on .active) */ }
+  body .top-nav a {
+    color: #11998e; }
+  body .kb-header {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: white; }
+    body .kb-header h1 {
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 10px; }
+    body .kb-header h2 {
+      font-weight: 300;
+      line-height: 1.4;
+      font-size: 24px;
+      margin-top: 0; }
+  body .page-header {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee; }
+  body .highlight {
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px; }
+  body .sticky-top {
+    top: 10px; }
+  body nav[data-toggle='toc'] .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #767676; }
+  body nav[data-toggle='toc'] .nav > li > a:hover,
+  body nav[data-toggle='toc'] .nav > li > a:focus {
+    padding-left: 19px;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #007bff; }
+  body nav[data-toggle='toc'] .nav-link.active,
+  body nav[data-toggle='toc'] .nav-link.active:hover,
+  body nav[data-toggle='toc'] .nav-link.active:focus {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #007bff;
+    background-color: transparent;
+    border-left: 2px solid #007bff; }
+  body nav[data-toggle='toc'] .nav-link + ul {
+    display: none;
+    /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px; }
+  body nav[data-toggle='toc'] .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal; }
+  body nav[data-toggle='toc'] .nav .nav > li > a:hover,
+  body nav[data-toggle='toc'] .nav .nav > li > a:focus {
+    padding-left: 29px; }
+  body nav[data-toggle='toc'] .nav .nav > li > .active,
+  body nav[data-toggle='toc'] .nav .nav > li > .active:hover,
+  body nav[data-toggle='toc'] .nav .nav > li > .active:focus {
+    padding-left: 28px;
+    font-weight: 500; }
+  body nav[data-toggle='toc'] .nav-link.active + ul {
+    display: block; }
+
+/*# sourceMappingURL=style.css.map */
