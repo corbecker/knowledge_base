@@ -1,4 +1,16 @@
 /*
+Theme Name: Knowledge Base
+Theme URI: http://corbinbecker.com
+Author: Corbin Becker
+Author URI: http://corbinbecker.com
+Description: Simple bootstrap theme for stpring knowledge base of dev tips etc.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: knowledgebase
+*/
+
+/*
  * Globals
  */
 
@@ -38,26 +50,21 @@ h6, .h6 {
   background-color: #162955;
 }
 
-/* Nav links */
-.blog-nav-item {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  color: #cdddeb;
-}
-.blog-nav-item:hover,
-.blog-nav-item:focus {
-  color: #fff;
-  text-decoration: none;
+
+.navbar a{
+  color: white;
 }
 
-/* Active state gets a caret at the bottom */
-.blog-nav .active {
+.navbar{
+  .dropdown-menu a{
+    color: black;
+  }
+}
+
+.navbar .active {
   color: #fff;
   border-bottom: 2px solid white;
 }
-
 
 /*
  * Blog name and description
@@ -186,6 +193,26 @@ h6, .h6 {
     &:hover{
       box-shadow: 4px 4px 4px #d3d3d3;
     }
+  }
+}
+
+.post-thumb img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.comments{
+  border: 1px solid #d3d3d3;
+  padding: 20px;
+  li{
+    list-style-type: none;
+  }
+  .comment-body{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #d1d1d1;
+    list-style-type: none;
   }
 }
 

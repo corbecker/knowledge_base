@@ -10,31 +10,16 @@
 
             <div class="blog-post">
               <h2 class="blog-post-title">
-                <a href="<?php the_permalink(); ?>">
                 <?php the_title() ?>
-                </a>
               </h2>
 
-              <p class="blog-post-meta">
-                <?php the_time('F j, Y g:i a'); ?>
-                 by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
-                   <?php the_author(); ?>
-                 </a>
-              </p>
-
-              <div class="post-thumb">
-                <?php if(has_post_thumbnail()) : ?>
-                  <?php the_post_thumbnail(); ?>
-                <?php endif; ?>
-              </div>
-
-              <?php the_excerpt()?>
+              <?php the_content()?>
 
             </div><!-- /.blog-post -->
           
           <?php endWhile; ?>
           <?php else : ?>
-            <p><?php __('No Posts Found') ?></p>
+            <p><?php __('No Page Found') ?></p>
           <?php endif; ?>
 
         </div><!-- /.blog-main -->
