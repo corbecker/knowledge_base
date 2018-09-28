@@ -12,6 +12,9 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
     register_nav_menus(array(
       'primary' => __('Primary Menu')
     ));
+
+    //post formats made available in 'add post' backend
+    add_theme_support('post-formats', array('aside', 'gallery'));
   }
 
   //gets fired after the setup hook
