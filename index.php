@@ -6,22 +6,22 @@
 
         <?php if(have_posts()) : ?>
 
-          <?php while(have_posts()) : the_post(); ?>
+            <?php while(have_posts()) : the_post(); ?>
             
             <!-- 'content is refering to content.php' -->
-            <?php get_template_part('content', get_post_format()); ?>
+                <?php get_template_part('content', get_post_format()); ?>
           
-          <?php endWhile; ?>
-          <?php else : ?>
+            <?php endWhile; ?>
+            <?php else : ?>
             <p><?php __('No Posts Found') ?></p>
-          <?php endif; ?>
+            <?php endif; ?>
 
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <?php if(is_active_sidebar('sidebar')) : ?>
-            <?php dynamic_sidebar('sidebar') ?>
-          <?php endif; ?>
+            <?php if(is_active_sidebar('sidebar')) : ?>
+                <?php dynamic_sidebar('sidebar') ?>
+            <?php endif; ?>
         </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->

@@ -24,7 +24,7 @@ $comments_args = array(
         'label_submit'=>'Send',
         'title_reply'=>'Write a Reply or Comment',
         'comment_notes_after' => '',
-        'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+        'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x('Comment', 'noun') . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 );
 comment_form($comments_args);
 ?>
