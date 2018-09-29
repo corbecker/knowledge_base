@@ -8,6 +8,22 @@ function wpb_customize_register($wp_customize){
     'priority' => 130
   ));  
 
+  $wp_customize->add_section('topics_parent', array(
+    'title' => __('Topics Parent', 'knowledgebase'),
+    'description' => sprintf(__('ID for topics parent page', 'knowledgebase')),
+    'priority' => 130
+  ));  
+
+  $wp_customize->add_setting('topics_parent', array(
+    'type' => 'theme_mod'
+  ));
+
+  $wp_customize->add_control('topics_parent', array(
+    'label' => __('Text', 'knowledgebase'),
+    'section' =>'topics_parent', 
+    'priority' => 2
+  ));
+
   $wp_customize->add_setting('showcase_heading', array(
     'default' => _x('Knowledge Base', 'knowledgebase'), 
     'type' => 'theme_mod'

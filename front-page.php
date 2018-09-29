@@ -64,8 +64,8 @@
         <!-- YOU CAN ASSIGN A PAGE TO BE THE PARENT PAGE OF ALL TOPICS -->
         <?php
           $args = array(
-              'child_of' => 42,
-              'parent' => 42,
+              'child_of' => get_theme_mod('topics_parent', 'Knowledge Base'),
+              'parent' => get_theme_mod('topics_parent', 'Knowledge Base'),
               'hierarchical' => 0
           );
           $pages = get_pages($args);

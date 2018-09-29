@@ -37,5 +37,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
   require get_template_directory().'/includes/customizer.php';
 
+  
+
 ?>
  
