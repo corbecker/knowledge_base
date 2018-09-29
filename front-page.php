@@ -57,7 +57,11 @@
     <section class="boxes">
       <div class="container">
         <div class="row">
+        
 
+        <!-- TODO -->
+        <!-- FIX THIS SO THAT INSTEAD OF PASSING ID OF 42 -->
+        <!-- YOU CAN ASSIGN A PAGE TO BE THE PARENT PAGE OF ALL TOPICS -->
         <?php
           $args = array(
               'child_of' => 42,
