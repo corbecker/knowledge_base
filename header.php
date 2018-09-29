@@ -39,8 +39,3 @@
       </div>
     </div>
     <div class="container">
-
-      <div class="blog-header">
-        <h1 class="blog-title"><?php blogInfo('name') ?></h1>
-        <p class="lead blog-description"><?php blogInfo('description') ?></p>
-      </div>

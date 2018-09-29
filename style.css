@@ -71,12 +71,20 @@ h6,
   font-size: 20px;
   color: #999; }
 
+.highlight {
+  padding: 9px 14px;
+  margin-bottom: 14px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px; }
+
 /*
  * Main column and sidebar layout
  */
 .blog-main {
   font-size: 18px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-top: 20px; }
 
 /* Sidebar modules for boxing content */
 .sidebar-module {

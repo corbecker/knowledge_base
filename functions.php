@@ -35,5 +35,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
   add_action('widgets_init', 'wpb_init_widgets');
 
+  require get_template_directory().'/includes/customizer.php';
+
 ?>
  

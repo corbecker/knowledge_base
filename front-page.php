@@ -46,9 +46,9 @@
 
     <section class="showcase">
       <div class="container">
-        <h1>Knowledge Base</h1>
-        <p>A collection of best practices, tips, workarounds on various<br>Web Development technologies.</p>
-        <a class="btn btn-primary btn-lrg">About me</a>
+        <h1><?php echo get_theme_mod('showcase_heading', 'Knowledge Base') ?></h1>
+        <p><?php echo get_theme_mod('showcase_text', 'A collection of best practices, tips, workarounds on various<br>Web Development technologies.') ?></p>
+        <a href="https://corbinbecker.com/" target="_blank" class="btn btn-primary btn-lrg">Author</a>
         <!-- TODO -->
         <!-- fork on github button -->
       </div>
