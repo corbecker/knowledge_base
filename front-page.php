@@ -57,21 +57,28 @@
     <section class="boxes">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <h3>ES6</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <h3>React</h3>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <h3>Sublime</h3>
-            </div>
-          </div>
+
+        <?php
+          $args = array(
+              'child_of' => 42,
+              'parent' => 42,
+              'hierarchical' => 0
+          );
+          $pages = get_pages($args);
+            foreach($pages as $id)
+            { ?>
+              <div class="col-md-4">
+                <a href="<?php the_permalink($id); ?>">
+                  <div class="box">
+                    <h2>
+                      <?php echo ''.get_the_title($id); ?>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            <?php }
+        ?>
+
         </div>
       </div>
     </section>

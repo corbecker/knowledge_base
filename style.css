@@ -134,7 +134,7 @@ h6,
 /*CUSTOM*/
 .showcase {
   height: 350px;
-  padding: 80px 20px;
+  padding: 60px 20px;
   margin-bottom: 30px;
   color: #fff;
   background-color: #162955; }
@@ -155,7 +155,8 @@ h6,
     padding: 10px 10px;
     box-shadow: 2px 2px 2px #d3d3d3;
     cursor: pointer;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    margin-bottom: 20px; }
     .boxes .box:hover {
       box-shadow: 4px 4px 4px #d3d3d3; }
 
@@ -175,7 +176,7 @@ h6,
     background-color: #d1d1d1;
     list-style-type: none; }
 
-.navbar-toggle {
+.navbar-toggler {
   position: relative;
   float: right;
   padding: 9px 10px;
@@ -186,6 +187,7 @@ h6,
   background-image: none;
   border: 1px solid #444;
   /* added line */
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
